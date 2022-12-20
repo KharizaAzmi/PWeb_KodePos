@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="#home">Pencarian Kode Pos Indonesia</a></li>
+      </ul>
+    </header>
+    <div class="container">
+      <label for="provinsi">Provinsi</label>
+      <select name="provinsi" id="provinsi" onchange="displayKabupaten()"></select>
+      <br />
+      <label for="">Kabupaten</label>
+      <select name="kabupaten" id="kabupaten" onchange="displayKecamatan()"></select>
+      <br />
+      <label for="">Kecamatan</label>
+      <select name="kecamatan" id="kecamatan" onchange="displayKelurahan()"></select>
+      <br />
+      <label for="">Desa/Kelurahan</label>
+      <select name="kelurahan" id="kelurahan" onchange="displayResult()"></select>
+    </div>
+    <section class="result">
+      <center>
+        <h3>Kode Pos :</h3>
+        <div id="result"></div>
+      </center>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
